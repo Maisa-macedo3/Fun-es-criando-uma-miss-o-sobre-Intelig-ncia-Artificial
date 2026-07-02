@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🔐 Missão IA · Segurança Digital</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- CABEÇALHO COM TEMA IA -->
+    <header class="mission-header">
+      <div class="header-icon">🤖</div>
+      <h1>Missão: <span class="highlight">IA</span> & Segurança</h1>
+      <p class="subtitle">🧠 inteligência artificial · matemática · senhas quânticas</p>
+      <div class="mission-badge">
+        <span>⚡ Nível: <strong>AGENTE DIGITAL</strong></span>
+        <span>🔓 Fase: <strong>PROTEÇÃO DE DADOS</strong></span>
+      </div>
+    </header>
+
+    <!-- PAINEL DA MISSÃO (CARD PRINCIPAL) -->
+    <main>
+      <section class="card theory">
+        <h2>🧮 A matemática das senhas na era da IA</h2>
+        <div class="ai-context">
+          <span class="ai-badge">🧠 IA explica</span>
+          <p>
+            <strong>Inteligência Artificial</strong> pode quebrar senhas fracas em milissegundos. 
+            Por isso, usamos <strong>entropia matemática</strong> (bits) para medir a força.
+            Quanto maior a entropia, mais <strong>imprevisível</strong> — e a IA demora anos para decifrar.
+          </p>
+        </div>
+        <div class="formula">
+          <span class="math">E = L · log₂(C)</span>
+          <span class="math-desc">
+            <strong>C</strong> = caracteres disponíveis · <strong>L</strong> = comprimento
+          </span>
+        </div>
+        <p>
+          🧪 <strong>Missão IA:</strong> gerar senhas com alto fator de entropia, 
+          protegendo dados contra ataques de força bruta com redes neurais.
+        </p>
+      </section>
+
+      <!-- GERADOR DE SENHAS (COM ESTILO IA) -->
+      <section class="card generator" id="gerador">
+        <h2>⚙️ Gerador <span class="highlight">IA</span> · senhas quânticas</h2>
+        <div class="input-group">
+          <label for="length">🔢 Comprimento (6–32):</label>
+          <input type="number" id="length" value="16" min="6" max="32">
+          <span class="hint">recomendado: 16+</span>
+        </div>
+
+        <div class="options">
+          <label><input type="checkbox" id="useUpper" checked> A-Z</label>
+          <label><input type="checkbox" id="useLower" checked> a-z</label>
+          <label><input type="checkbox" id="useNumbers" checked> 0-9</label>
+          <label><input type="checkbox" id="useSymbols" checked> !@#$...</label>
+          <label class="ai-optimize"><input type="checkbox" id="useAI" checked> ✨ otimização IA</label>
+        </div>
+
+        <button id="generateBtn">🚀 Gerar com IA</button>
+
+        <div class="result">
+          <label for="passwordOutput">🔑 Senha gerada:</label>
+          <div class="password-box">
+            <input type="text" id="passwordOutput" readonly placeholder="Clique em gerar">
+            <button id="copyBtn" title="Copiar senha">📋</button>
+          </div>
+          <div class="entropy-box">
+            <span>🧊 Entropia estimada: </span>
+            <span id="entropyValue">—</span>
+            <span> bits</span>
+            <span class="entropy-level" id="entropyLevel">🔒</span>
+          </div>
+          <div class="ai-feedback" id="aiFeedback">
+            <span>🤖 IA: </span>
+            <span id="aiMessage">Aguardando geração...</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- PAINEL DE MISSÃO IA -->
+      <section class="card mission-panel">
+        <h2>🎯 Objetivo da missão</h2>
+        <div class="mission-grid">
+          <div class="mission-item">
+            <span class="mission-icon">🧩</span>
+            <div>
+              <h3>Entropia ≥ 80 bits</h3>
+              <p>Senhas com 80+ bits são consideradas <strong>resistentes a IA</strong>.</p>
+            </div>
+          </div>
+          <div class="mission-item">
+            <span class="mission-icon">⚡</span>
+            <div>
+              <h3>Diversidade máxima</h3>
+              <p>Use maiúsculas, minúsculas, números e símbolos para confundir redes neurais.</p>
+            </div>
+          </div>
+          <div class="mission-item">
+            <span class="mission-icon">🛡️</span>
+            <div>
+              <h3>Senhas únicas</h3>
+              <p>Cada serviço deve ter uma senha diferente — evita <strong>ataques de repetição</strong>.</p>
+            </div>
+          </div>
+        </div>
+        <div class="mission-progress">
+          <span>🧬 Progresso da IA:</span>
+          <div class="progress-bar">
+            <div class="progress-fill" id="progressFill" style="width: 0%;"></div>
+          </div>
+          <span id="progressText">0%</span>
+        </div>
+      </section>
+
+      <!-- DICAS COM INTELIGÊNCIA ARTIFICIAL -->
+      <section class="card tips">
+        <h2>🧠 Dicas da IA para senhas quânticas</h2>
+        <ul>
+          <li>🔹 <strong>Frases-senha:</strong> "C0m1d@#2026!IA" é mais forte que "senha123".</li>
+          <li>🔹 <strong>Não repita</strong> padrões: IAs detectam sequências comuns.</li>
+          <li>🔹 <strong>Atualize</strong> senhas críticas a cada 3 meses (IA aprende rápido).</li>
+          <li>🔹 <strong>Autenticação de dois fatores</strong> (2FA) é a melhor defesa contra IA.</li>
+          <li>🔹 <strong>Geradores aleatórios</strong> (como este) usam entropia matemática.</li>
+        </ul>
+        <div class="ai-tip">
+          <span>🤖 <em>“A melhor senha é aquela que nem você decora, mas seu gerenciador guarda.”</em></span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>🔐 Missão IA · Segurança Digital · 2026 · código aberto</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
